@@ -557,6 +557,93 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+body {
+  font-family: "Comfortaa", cursive;
+}
+
+.body-bg {
+  background: #ff4e50;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+      to right,
+      #d3b622,
+      #ff4e50
+    );
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.add-todo {
+  background: lime;
+}
+
+.add-todo:hover {
+  background: white;
+  color: lime;
+}
+
+.fa-check,
+  .fa-trash {
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: scale(1) rotateZ(20deg);
+  transition: transform 0.3s ease;
+  opacity: 0.5;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: white;
+  outline: none;
+  border: none;
+  border-radius: 0;
+}
+
+.select {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+select {
+  width: 10rem;
+  color: #ff4e50;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* border-left-radius: 10px; */
+}
+
+.select::after {
+  content: "\25BC";
+  background: #ff4e50;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  padding: 0.7rem;
+  right: 0;
+  top: 1;
+}
+
+.select:hover::after {
+  background-color: white;
+  color: #ff4e50;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -731,4 +818,3 @@ video {
     line-height: 2.5rem;
   }
 }
-
