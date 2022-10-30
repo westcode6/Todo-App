@@ -20,12 +20,12 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="body-bg">
+  <body class="body-bg h-screen overflow-scroll">
     <div
-      class="w-full md:w-1/3 m-auto px-4 mt-10 flex justify-center flex-col items-center"
+      class="w-full md:w-1/3 m-auto  mt-10 flex justify-center flex-col items-center"
     >
-      <header class="w-full header rounded-2xl px-4 py-6 shadow-2xl">
-        <h1 class="text-2xl md:text-4xl text-gray-50 font-semibold">
+      <header class="md:w-1/3 mt-32 z-10 body-bg fixed rounded-2xl px-4 py-6 shadow-2xl">
+        <h1 class="text-2xl md:text-3xl text-gray-50 font-semibold">
           Set Your Daily Goals..
         </h1>
 
@@ -34,11 +34,11 @@
             <input
               type="text"
               placeholder="😎 Plan your day"
-              class="todo-input p-2 w-full"
+              class="todo-input p-2 w-full rounded-l-2xl"
             />
             <button
               type="submit"
-              class="add-todo hover:text-lime-400 transition ease delay-150 text-white p-2 text-2xl font-bold"
+              class="add-todo rounded-r-2xl hover:text-lime-400 transition ease delay-150 text-white p-2 text-2xl font-bold"
             >
               <i class="fas fa-plus"></i>
             </button>
@@ -55,11 +55,20 @@
       </header>
     </div>
     <section
-      class="mt-4 px-4 w-full md:w-1/3 m-auto flex justify-center items-center"
+      class="mt-44 px-4 py-10 w-full md:w-1/3 m-auto flex flex-col justify-center items-center"
     >
+    <!-- <h4>Today Goals:</h4> -->
       <ul class="todo-list w-full"></ul>
     </section>
 
+
+    <footer class="w-full p-4 fixed bottom-0 bg-neutral-800 text-neutral-300 flex justify-center items-center">
+<div class="">
+  <h4 class="text-sm font-semibold">&copy;  Westcode Todo App</h4>
+
+</div>    </footer>
+
     <script src="./app.js"></script>
+
   </body>
 </html>

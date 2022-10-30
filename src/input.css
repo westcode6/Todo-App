@@ -11,12 +11,12 @@ body {
   .body-bg {
     background: #ff4e50; /* fallback for old browsers */
     background: -webkit-linear-gradient(
-      to right,
+      to left,
       #625202,
       #ff4e50
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
-      to right,
+      to left,
       #d3b622,
       #ff4e50
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -75,7 +75,7 @@ body {
 
   .select::after {
     content: "\25BC";
-    background: #ff4e50;
+    background: orangered;;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     color: white;
